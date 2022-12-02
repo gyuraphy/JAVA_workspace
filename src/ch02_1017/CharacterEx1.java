@@ -1,4 +1,4 @@
-package ch2_1017;
+package ch02_1017;
 
 public class CharacterEx1 {
 
@@ -12,7 +12,7 @@ public class CharacterEx1 {
 		System.out.println("=====================");
 		char ch2 = 66;
 		System.out.println(ch2);
-		System.out.println(ch2);
+		System.out.println((int)ch2);
 		System.out.println("=====================");
 		int i1 = 67;
 		System.out.println(i1);
