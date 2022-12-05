@@ -20,6 +20,29 @@ public class TakeTrans {
 		bus2.showInfo();
 		subway1.showInfo();
 		
+		Student lsyStudent2 = new Student("이상용2", 20000);
+		lsyStudent2.takeSubway(subway1);
+		lsyStudent2.takeBus(bus2);
+		
+		// 추가 주문
+		// 카카오택시 만들기. --> 클래스를 추가만들기
+		// 기존 버스의 멤버 및 메서드를 최대한 활용하기.
+		// 본인 이름으로 Student 객체를 생성해서
+		// 카카오 택시 타고,
+		// 조건이 없어서 추가
+		// 해당 학생 클래스에 카카오 택시 타는 것을 추가
+		// 해당 학생의 정보와 카카오 택시 정보를 출력 해보세요.
+		
+		Student cdgStudent = new Student("최동규", 50000);
+		KakaoTaxi KakaoTaxi3 = new KakaoTaxi(3);
+		cdgStudent.takeTaxi(KakaoTaxi3);
+		System.out.println("=====================");
+		System.out.println("최동규 학생의 택시 탑승 후 정보");
+		cdgStudent.showInfo();
+		System.out.println("3번 택시의 정보");
+		KakaoTaxi3.showInfo();
+		System.out.println("=====================");
+		
 //		// 두 명의 학생을 생성
 //		  Student studentJames = new Student("James", 5000);   
 //		  Student studentTomas = new Student("Tomas", 10000);
