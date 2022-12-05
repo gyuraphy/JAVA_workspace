@@ -21,7 +21,7 @@ class BirthDay{
 	// 2022년 12월 5일, 이름: 최동규 c
 	
 	public void showInfo2() {
-		System.out.println(year+"년 "+month+"월 "+day+"일 , "+"이름: "+getName());		
+		System.out.println(year+"년 "+month+"월 "+day+"일, "+"이름: "+getName());		
 	}
 	
 	public String getName() {
@@ -92,7 +92,7 @@ public class ThisExmaple {
 //		bDay.printThis();
 		
 		BirthDay ex2 = new BirthDay(5,12,2022,"최동규");
-		System.out.println("기존 출력 : 년월일");
+		System.out.println("기존 출력 : 년/월/일");
 		ex2.showInfo();
 		System.out.println("년 월 일, 이름: 자기이름 형식으로 출력");
 		ex2.showInfo2();
