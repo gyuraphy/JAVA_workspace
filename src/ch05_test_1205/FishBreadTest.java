@@ -12,9 +12,11 @@ public class FishBreadTest {
 		fishBread1.setDough("cdg 기법의 반죽");
 		fishBread1.setRedBean("흑설탕을 추가한 팥");
 		fishBread1.showInfo();
+		System.out.println("붕어빵1의 참조형 변수가 가리키는 값 : " + fishBread1);
 		
 		FishBread fishBread2 = new FishBread("밀가루2","단팥");
-
+		fishBread2.showInfo();
+		System.out.println("붕어빵2의 참조형 변수가 가리키는 값 : " + fishBread2);
 	}
 
 }
