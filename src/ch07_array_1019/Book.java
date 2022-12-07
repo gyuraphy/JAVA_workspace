@@ -4,6 +4,7 @@ public class Book {
 
 	private String bookName;
 	private String author;
+	private int bookPrice;
 	
 	public Book(){}
 	
@@ -12,6 +13,13 @@ public class Book {
 		this.author = author;
 	}
 	
+	public Book(String bookName, String author, int bookPrice) {
+		super();
+		this.bookName = bookName;
+		this.author = author;
+		this.bookPrice = bookPrice;
+	}
+
 	public String getBookName() {
 		return bookName;
 	}
@@ -25,6 +33,6 @@ public class Book {
 		this.author = author;
 	}
 	public void showBookInfo(){
-		System.out.println(bookName + "," + author);
+		System.out.println(bookName + "," + author + "," + bookPrice);
 	}
 }
