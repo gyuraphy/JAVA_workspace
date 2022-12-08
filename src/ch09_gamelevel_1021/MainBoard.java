@@ -45,7 +45,7 @@ public class MainBoard {
 		UltraLevel uLevel = new UltraLevel();
 		player.upgradeLevel(uLevel);
 		player.play(4);
-		UltimateSkill ultimateSkill = new UltimateSkill("qwer", 5, "전역범위");
+		UltimateSkill ultimateSkill = new UltimateSkill("qwer", 5, "전역");
 		player.useUltimateSkill((ultimateSkill));
 	}
 }

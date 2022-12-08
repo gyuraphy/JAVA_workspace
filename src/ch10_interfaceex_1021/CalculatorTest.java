@@ -1,6 +1,16 @@
 package ch10_interfaceex_1021;
 
 public class CalculatorTest {
+	
+	public void testInterFacteMethod(Calc calc) {
+		// testInterFacteMethod 메서드에 올수 있는 매개변수는 무엇인가요?
+		// Calc 를 포함한, Calc 인터페이스르 구현한 모든 클래스가 올 수 있다.
+		// APIE
+		// A : Abstract , 추상화
+		// P : Polymorphism , 다형성
+		// I : Inheritance , 상속
+		// E : Encapsulation , 캡슐화
+	}
 
 	public static void main(String[] args) {
 
@@ -14,7 +24,17 @@ public class CalculatorTest {
 		System.out.println(calc.divide(num1, num2));
 		calc.showInfo();
 		
+		// 다형성, 인터페이스 Calc를 구현을 하면, 매치 상속에서 부모 클래스 형으로 받듯이,
+		// 해당 구현한 인터페이스 형으로도 받을 수 있습니다.
+		// 추상클래스는 생성 불가
+		// Calculator calculator = new Calculator();
+		Calculator calculator = calc;
+		Calc cal2 = calculator;
 		Calc newCalc = calc;
+		
+		Test t1 = new Test();
+		Calc calc3 = t1;
+		Test t2 = (Test)calc3;
 		
 		calc.description();   //디폴트 메소드 호출
 				
