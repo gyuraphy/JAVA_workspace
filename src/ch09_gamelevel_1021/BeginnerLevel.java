@@ -23,4 +23,9 @@ public class BeginnerLevel extends PlayerLevel{
 		System.out.println("***** 초보자 레벨 입니다. *****");
 	}
 
+	@Override
+	public void ult() {
+		System.out.println("필살기가 뭐죠? 사용실패!");			
+	}
+
 }

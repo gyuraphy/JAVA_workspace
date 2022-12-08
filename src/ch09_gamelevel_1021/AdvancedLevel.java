@@ -21,4 +21,9 @@ public class AdvancedLevel extends PlayerLevel{
 	public void showLevelMessage() {
 		System.out.println("***** 중급자 레벨 입니다. *****");
 	}
+	
+	@Override
+	public void ult() {
+		System.out.println("필살기를 깨달아가고 있습니다. 사용실패!");			
+	}
 }
