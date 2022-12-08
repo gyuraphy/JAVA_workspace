@@ -1,16 +1,19 @@
 package ch08_witharraylist_1020;
 
-public class VIPCustomer extends Customer{
+public class VVIPCustomer extends Customer{
 
-	private int agentID;
+	private int agentID;	
 	double saleRatio;
+	// 발렛 파킹 번호
+	private int valetID;
 	
-	public VIPCustomer(int customerID, String customerName, int agentID){
+	public VVIPCustomer(int customerID, String customerName, int agentID, int valetID){
 		super(customerID, customerName);	
-		customerGrade = "VIP";
-		bonusRatio = 0.05;
-		saleRatio = 0.1;
+		customerGrade = "VVIP";
+		bonusRatio = 0.15;
+		saleRatio = 0.2;
 		this.agentID = agentID;
+		this.valetID = valetID;
 	}
 	
 	public int calcPrice(int price){
@@ -25,4 +28,10 @@ public class VIPCustomer extends Customer{
 	public int getAgentID(){
 		return agentID;
 	}
+
+	public int getValetID() {
+		return valetID;
+	}
+	
+	
 }

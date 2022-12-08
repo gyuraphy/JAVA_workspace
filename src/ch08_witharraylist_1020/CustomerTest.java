@@ -17,6 +17,7 @@ public class CustomerTest {
 		Customer customerYul = new GoldCustomer(10040, "이율곡");
 		Customer customerKim = new VIPCustomer(10050, "김유신", 12345);
 		GoldCustomer lsy = new GoldCustomer(10060, "이상용");
+		Customer cdg = new VVIPCustomer(10070, "cdg", 12345, 12345);
 		
 		customerList.add(customerLee);
 		customerList.add(customerShin);
@@ -24,6 +25,7 @@ public class CustomerTest {
 		customerList.add(customerYul);
 		customerList.add(customerKim);
 		customerList.add(lsy);
+		customerList.add(cdg);
 		
 		System.out.println("====== 고객 정보 출력 =======");
 		
