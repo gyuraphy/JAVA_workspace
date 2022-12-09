@@ -14,7 +14,7 @@ public class Variable1 {
 		// 참조형 타입 : 클래스 타입.
 		// class Person
 		// 참조형 타입으로 선언하게 되면
-		// Persion p1: tjsdjs aks.
+		// Persion p1: 선언 만.
 		// p1 = new Person(); 기본 생성자 호출.
 		// 생성자의 역할은 값을 초기화 하는 역할.
 		
@@ -24,9 +24,9 @@ public class Variable1 {
 		System.out.println("간혹 단축키 설정이 안된다면 설정에서 추가해주기.");
 		// 참고 블로그 사이트
 		// https://velog.io/@susu1991/java-%EC%8B%A4%ED%96%89-%EB%8B%A8%EC%B6%95%ED%82%A4%EA%B0%80-%EC%95%88%EB%A8%B9%ED%9E%90-%EB%95%8C
-		int #h = 3; // 특수문자는 $, _ 만 사용 가능
+		// int #h = 3; // 특수문자는 $, _ 만 사용 가능
 		int 한글 = 3; // 한글 사용을 자제
-		int int; // 예약어 사용 불가능
+		// int int; // 예약어 사용 불가능
 		// int i = 10000000000;
 		// 해당 데이터 타입의 메모리 크기 및 공간에 대해 암기 할 필요 없음.
 		// 컴파일러가 알아서 1차 문법 검사

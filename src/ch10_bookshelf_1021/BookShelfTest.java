@@ -3,7 +3,8 @@ package ch10_bookshelf_1021;
 public class BookShelfTest {
 
 	public static void main(String[] args) {
-
+		
+		// 인터페이스형으로 받음!(다형성)
 		Queue shelfQueue = new BookShelf();
 		shelfQueue.enQueue("태백산맥 1");
 		shelfQueue.enQueue("태백산맥 2");

@@ -12,6 +12,8 @@ public class SchedulerTest {
 		System.out.println("P : 우선순위가 높은 고객 먼저 할당 ");
 		
 		int ch = System.in.read();
+		
+		// Schedular 라는 인터페이스르 구현한 모든 클래스를 담을 수 잇다. 인터페이스의 다형성.
 		Scheduler scheduler = null;
 		
 		if(ch == 'R' || ch == 'r'){
