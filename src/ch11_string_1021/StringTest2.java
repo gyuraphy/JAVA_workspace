@@ -13,5 +13,6 @@ public class StringTest2 {
 		
 		System.out.println(javaStr);
 		System.out.println("연결된 문자열 주소 값: " +System.identityHashCode(javaStr));
+		
 	}
 }
