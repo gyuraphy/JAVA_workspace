@@ -1,7 +1,8 @@
 package ch13_innerclass_1024;
 
 class OutClass {
-
+	
+	// OutClass 의 멤버 변수
 	private int num = 10;
 	private static int sNum = 20;
 	private InClass inClass;
@@ -10,6 +11,7 @@ class OutClass {
 		inClass = new InClass(); // 내부 클래스 생성
 	}
 	
+	//  static 없음, 인스턴스 변수
 	class InClass{
 		
 		int inNum = 100;

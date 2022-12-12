@@ -10,16 +10,16 @@ public class Animal implements Comparable<Animal>{
 		this.animalName = animalName;
 	}
 	
-	public int getanimalId() {  //
+	public int getAnimalId() {  //
 		return animalId;
 	}
-	public void setanimalId(int animalId) {
+	public void setAnimalId(int animalId) {
 		this.animalId = animalId;
 	}
-	public String getanimalName() {
+	public String getAnimalName() {
 		return animalName;
 	}
-	public void setanimalName(String animalName) {
+	public void setAnimalName(String animalName) {
 		this.animalName = animalName;
 	}
 	
@@ -44,12 +44,15 @@ public class Animal implements Comparable<Animal>{
 				return false;
 		}
 		return false;
-	}
-
+	}	
+	
 	@Override
 	public int compareTo(Animal animal) {
 		
-		return (this.animalId - animal.animalId);   // 오름차순
-		//return (this.animalId - animal.animalId) *  (-1);   // 내림 차순
+//		return (this.animalId - animal.animalId);   // 오름차순
+		return (this.animalId - animal.animalId) * (-1);   // 내림 차순
+	}
+	public int comparator(Animal animal) {
+		return (this.animalId - animal.animalId) * (-1);   // 내림 차순
 	}
 }
