@@ -4,10 +4,10 @@ import java.util.Comparator;
 
 public class Member2 implements Comparator<Member2>{
 
-	private int memberId;        //ȸ�� ���̵�
-	private String memberName;   //ȸ�� �̸�
+	private int memberId;        //회원 아이디
+	private String memberName;   //회원 이름
 
-	public Member2(int memberId, String memberName){ //������
+	public Member2(int memberId, String memberName){ //생성자
 		this.memberId = memberId;
 		this.memberName = memberName;
 	}
@@ -26,8 +26,8 @@ public class Member2 implements Comparator<Member2>{
 	}
 	
 	@Override
-	public String toString(){   //toString �޼ҵ� �����ε�
-		return memberName + " ȸ������ ���̵�� " + memberId + "�Դϴ�";
+	public String toString(){   //toString 메소드 오버로딩
+		return memberName + " 회원님의 아이디는 " + memberId + "입니다";
 	}
 
 	@Override

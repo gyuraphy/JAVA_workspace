@@ -8,9 +8,9 @@ public class MemberHashSetTest {
 
 		MemberHashSet memberHashSet = new MemberHashSet();
 		
-		Member memberLee = new Member(1001, "������");
-		Member memberSon = new Member(1002, "�չα�");
-		Member memberPark = new Member(1003, "�ڼ���");
+		Member memberLee = new Member(1001, "이지원");
+		Member memberSon = new Member(1002, "손민국");
+		Member memberPark = new Member(1003, "박서훤");
 		
 		
 		memberHashSet.addMember(memberLee);
@@ -18,7 +18,7 @@ public class MemberHashSetTest {
 		memberHashSet.addMember(memberPark);
 		memberHashSet.showAllMember();
 		
-		Member memberHong = new Member(1003, "ȫ�浿");  //1003 ���̵� �ߺ� 
+		Member memberHong = new Member(1003, "홍길동");  //1003 아이디 중복 
 		memberHashSet.addMember(memberHong);
 		memberHashSet.showAllMember();
 	}

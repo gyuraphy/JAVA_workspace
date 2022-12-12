@@ -13,7 +13,7 @@ class MyStack{
 	public String pop() {
 		int len = arrayStack.size();
 		if(len == 0 ) { 
-			System.out.println("������ ������ϴ�");
+			System.out.println("스택이 비었습니다");
 			return null;
 		}
 		
@@ -26,12 +26,13 @@ public class StackTest {
 	public static void main(String[] args) {
 
 		MyStack stack = new MyStack();
-		stack.push("A");
-		stack.push("B");
-		stack.push("C");
+		stack.push("A"); // 1층
+		stack.push("B"); // 2층
+		stack.push("C"); // 3층
 		
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
+		System.out.println(stack.pop()); // 3층
+		System.out.println(stack.pop()); // 2층
+		System.out.println(stack.pop()); // 1층
 	}
 }
+

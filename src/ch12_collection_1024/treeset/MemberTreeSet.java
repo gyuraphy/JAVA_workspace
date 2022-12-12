@@ -30,7 +30,7 @@ public class MemberTreeSet {
 			}
 		}
 		
-		System.out.println(memberId + "�� �������� �ʽ��ϴ�");
+		System.out.println(memberId + "가 존재하지 않습니다");
 		return false;
 	}
 	

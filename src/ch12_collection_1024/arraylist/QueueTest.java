@@ -13,7 +13,7 @@ class MyQueue{
 	public String deQueue() {
 		int len = arrayQueue.size();
 		if(len == 0 ) { 
-			System.out.println("ť�� ������ϴ�");
+			System.out.println("큐가 비었습니다");
 			return null;
 		}
 		
@@ -26,12 +26,12 @@ public class QueueTest {
 	public static void main(String[] args) {
 
 		MyQueue queue = new MyQueue();
-		queue.enQueue("A");
-		queue.enQueue("B");
-		queue.enQueue("C");
+		queue.enQueue("A"); // 1층
+		queue.enQueue("B"); // 2층
+		queue.enQueue("C"); // 3층
 		
-		System.out.println(queue.deQueue());
-		System.out.println(queue.deQueue());
-		System.out.println(queue.deQueue());
+		System.out.println(queue.deQueue()); // 1층
+		System.out.println(queue.deQueue()); // 2층
+		System.out.println(queue.deQueue()); // 3층
 	}
 }
