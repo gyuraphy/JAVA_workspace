@@ -32,7 +32,7 @@ public class MemberArrayList {
 		// Iterator 인터페이스, 반복 실행을 위해서 사용 함
 		// 컬렉션, 여러개의 데이터를 담는 그릇인데
 		// 컬렉션에 있는 데이터를 Iterator (반복자)에 담아서, 반복 작업을 함
-		// 반복문과 작업이 같다
+		// for과 같은 기능을 하고있다
 		Iterator<Member> ir = arrayList.iterator();
 		while (ir.hasNext()) {
 			Member member = ir.next();
