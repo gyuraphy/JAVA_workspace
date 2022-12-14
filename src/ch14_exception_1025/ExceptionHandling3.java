@@ -12,6 +12,6 @@ public class ExceptionHandling3 {
 		}catch(ArrayIndexOutOfBoundsException e){
 			System.out.println(e);
 		}
-		System.out.println("������ ������� �ʾҽ��ϴ�.");
+		System.out.println("비정상 종료되지 않았습니다.");
 	}
 }
